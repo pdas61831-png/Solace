@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>Women </title>
+        <style>
+             body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+        .logo img {
+            width: 150px; /* logo size */
+        }
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+       
+       .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+         /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #0b3003;
+            font-weight: bold;
+        }
+
+
+
+          /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        </style>
+    </head>
+    <body>
+         <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+            
+              <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+            
+             <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+    
+    <h1><center><font name="times" color="#0b3003"><u>Women</u></font></center></h1>
+
+    <div class="products">
+
+        <div class="item">
+            <img src="Dress1.jpg" alt="Dress1">
+            <h3>Bootcut velvet trousers</h3>
+            <p>Dark khaki green</p>
+            <p class="price">OMR 9</p>
+        </div>
+
+        <div class="item">
+            <img src="Dress2.jpg" alt="Dress2">
+            <h3>Mid waist trousers</h3>
+            <p>made of satin fabric. Featuring a matching pareo-style overlay.</p>
+            <p class="price">OMR 7</p>
+        </div>
+
+        <div class="item">
+            <img src="Dress3.jpg" alt="Dress3">
+            <h3>Structured Velvet Blazer</h3>
+            <p>Made of Velvet fabric</p>
+            <p class="price">OMR 9</p>
+        </div>
+
+        <div class="item">
+            <img src="Dress4.jpg" alt="Dress4">
+            <h3>Draped Mesh Dress</h3>
+            <p>Golden olive</p>
+            <p class="price">OMR 8</p>
+        </div>
+
+          <div class="item">
+            <img src="Dress5.jpg" alt="Dress5">
+            <h3>Pointelle Draped Midi Dress</h3>
+            <p>Perkins neck dress with long sleeves</p>
+            <p class="price">OMR 6</p>
+
+          </div>
+            
+         <div class="item">
+            <img src="Dress6.jpg" alt="Dress6">
+            <h3>Rib-Knit Dress</h3>
+            <p>Long,fitted dress in a rib-knit viscose blend</p>
+            <p class="price">OMR 8</p>
+         </div>
+
+          <div class="item">
+            <img src="Dress7.jpg" alt="Dress7">
+            <h3>Ribbed Shoulder Dress</h3>
+            <p>Fitted to the shoulder dress in ribbed jersey</p>
+            <p class="price">OMR 10</p>  
+          </div>
+
+           <div class="item">
+            <img src="Dress8.jpg" alt="Dress8">
+            <h3>Bead-Trimmed Mohair Blend Dress</h3>
+            <p>Loose fit dress in a soft knit with mohair and wool content</p>
+            <p class="price">OMR 12</p> 
+            </div>
+
+           <div class="item">
+            <img src="Dress9.jpg" alt="Dress9">
+            <h3>Jacquard Weave Dress</h3>
+            <p>Long, oversized, flared dress in shimmery jacquard weave fabric with glittery thread.</p>
+            <p class="price">OMR 5</p>
+           </div>
+
+            <div class="item">
+            <img src="Dress10.jpg" alt="Dress10">
+            <h3>Cap-Sleeved Jersey Dress</h3>
+            <p>Calf-length dress in jersey with a round neckline,cap sleeves and a gently flared skirt</p>
+            <p class="price">OMR 10</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+<html>
+<head>
+    <title>Solace Apparel</title>
+    <style>
+        body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+
+        .logo img {
+            width: 150px; 
+        }
+
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 40px 10%;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #033612;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 16px;
+            color: #0c3803;
+        }
+
+        .payment-section {
+            margin-top: 25px;
+        }
+
+        .payment-section h2 {
+            font-size: 22px;
+            color: #033612;
+            margin-bottom: 6px;
+        }
+
+        .payment-section p {
+            font-size: 15px;
+            color: #0c3803;
+            margin: 0;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+
+    <!-- PAYMENT CONTENT -->
+    <div class="content">
+        <h1>Payment Methods</h1>
+        <p>
+            Solace Apparel offers simple and convenient payment options for all in-store and online purchases.
+            All payments are made directly at the checkout counter — we do not process online payments.
+        </p>
+
+        <div class="payment-section">
+            <h2>Cash</h2>
+            <p>Accepted at all Solace Apparel store locations.</p>
+        </div>
+
+        <div class="payment-section">
+            <h2>Debit / Credit Card</h2>
+            <p>We accept major cards for fast and secure payments.</p>
+        </div>
+
+        <div class="payment-section">
+            <h2>Store Gift Cards</h2>
+            <p>You can redeem Solace Apparel gift cards during checkout.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+</body>
+</html>

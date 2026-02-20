@@ -1,0 +1,251 @@
+<html>
+<head>
+    <title>Cart</title>
+    <style>
+        body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+
+        .logo img {
+            width: 150px; 
+        }
+
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* cleaner spacing */
+        }
+
+        .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+         .cart-container {
+            width: 80%;
+            background: #fff;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .cart-item img {
+            width: 120px;
+            border-radius: 5px;
+        }
+
+        .item-info {
+            width: 40%;
+        }
+
+        .item-info h3 {
+            margin: 0;
+        }
+
+        .price {
+            font-size: 18px;
+        }
+
+
+        .quantity select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto 0;
+            padding: 12px;
+            background: #0b3003;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+
+
+
+
+/* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+
+            <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+
+            <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+
+
+    <h1><center><font name="times" color="#0b3003"><u>Cart </u></font></center></h1>
+
+    <div class="cart-container">
+
+    <div class="cart-item">
+        <img src="Dress1.jpg" alt="Dress1">
+        <div class="item-info">
+            <h3>Bootcut Velvet Trousers</h3>
+            <p class="price"> OMR 9</p>
+        </div>
+
+        <div class="quantity">
+            <label>Qty:</label>
+            <select id="qty">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="total" id="totalText">
+        Total: OMR 9
+    </div>
+
+
+    <a href="#" class="checkout-btn">Checkout</a>
+
+</div>
+
+<!-- SIMPLE JS -->
+<script>
+    document.getElementById("qty").onchange = function() {
+        let q = this.value;
+        document.getElementById("totalText").innerText = "Total: OMR" + (q * 9);
+    };
+</script>
+
+
+     <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

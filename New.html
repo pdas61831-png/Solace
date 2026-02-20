@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>New </title>
+        <style>
+             body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+        .logo img {
+            width: 150px; /* logo size */
+        }
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+       
+       .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+         /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #0b3003;
+            font-weight: bold;
+        }
+
+
+
+          /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        </style>
+    </head>
+    <body>
+         <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+            
+              <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+            
+             <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+    
+    <h1><center><font name="times" color="#0b3003"><u>New Arrivals</u></font></center></h1>
+
+    <div class="products">
+
+        <div class="item">
+            <img src="New1.jpg" alt="New1">
+            <h3>Mohair-Blend Turtleneck Jumper</h3>
+            <p>Jumper in a soft jacquard knit made from a mohair blend.Turtle neck, dropped shoulders and long sleeves.</p>
+            <p class="price">OMR 10</p>
+        </div>
+
+        <div class="item">
+            <img src="New9.jpg" alt="New9">
+            <h3>Embellished Clutch</h3>
+            <p>Clutch in woven fabric with a soft, napped finish and tone-on-tone rhinestone embellishments in front.</p>
+            <p class="price">OMR 4</p>
+        </div>
+
+        <div class="item">
+            <img src="New6.jpg" alt="New6">
+            <h3>Cable-Knit Scarf</h3>
+            <p>Blanket scarf un a soft cable knit.</p>
+            <p class="price">OMR 2</p>
+        </div>
+
+        <div class="item">
+            <img src="New5.jpg" alt="New5">
+            <h3>Wool-Blend Coat</h3>
+            <p>Single-breasted coat in a flted wool blend.Notch lapels, buttons down the front, flap front pockets, two inner pockets and long sleeves with decorative buttons at the cuffs.</p>
+            <p class="price">OMR 9</p>
+        </div>
+
+          <div class="item">
+            <img src="New4.jpg" alt="New4">
+            <h3>Flared-High Jeans</h3>
+            <p>5-pocket jeans in denim with a slight stretch for good comfort.Flared leg with a slim fit from the waist to the thigh and a flared cut from the knee to the hem.</p>
+            <p class="price">OMR 10</p>
+
+          </div>
+            
+         <div class="item">
+            <img src="New3.jpg" alt="New3">
+            <h3>Zip-Up Boots</h3>
+            <p>Boots with almond toes, block heels and ankle-high shafts with a zip on one side.Canvas linings and insoles.</p>
+            <p class="price">OMR 9</p>
+         </div>
+
+          <div class="item">
+            <img src="New11.jpg" alt="New11">
+            <h3>Regular Fit Shirt</h3>
+            <p>Shirt in a soft weave with a turn-down collar, classic front.yoke at the back with a box pleat, and an open chest pocket.</p>
+            <p class="price">OMR 6</p>  
+          </div>
+
+           <div class="item">
+            <img src="New12.jpg" alt="New12">
+            <h3>Crossbody Bag</h3>
+            <p>Crossbody bag with a handle and a zip at the top, and a long, detachable shoulder strap.Lined.</p>
+            <p class="price">OMR 5</p> 
+            </div>
+
+           <div class="item">
+            <img src="New10.jpg" alt="New10">
+            <h3>Flared Tailored Trousers</h3>
+            <p>Fitted trousers in woven fabric with a regular waist and a zip fly with a concealed hook-and-bar fastener.</p>
+            <p class="price">OMR 9</p>
+           </div>
+
+            <div class="item">
+            <img src="New7.jpg" alt="New7">
+            <h3>Jacket</h3>
+            <p>Jacket in soft, fluffy fabric with a round neckline, metal buttons down the front and discreet side pockets.Lined.</p>
+            <p class="price">OMR 7</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,254 @@
+<html>
+    <head>
+        <title>Onsale </title>
+        <style>
+             body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+        .logo img {
+            width: 150px; /* logo size */
+        }
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+       
+       .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+         /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #0b3003;
+            font-weight: bold;
+        }
+
+
+
+          /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        </style>
+    </head>
+    <body>
+         <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+            
+              <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+            
+             <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+    
+    <h1><center><font name="times" color="#0b3003"><u>Sale</u></font></center></h1>
+
+    <div class="products">
+
+        <div class="item">
+            <img src="Onsale4.jpg" alt="Onsale4">
+            <h3>2 Pairs Earrings</h3>
+            <p>Shiny metal earrings in different designs.</p>
+            <p><s>OMR 3</s></p>
+            <p class="price">OMR 1.50</p>
+        </div>
+
+        <div class="item">
+            <img src="Onsale2.jpg" alt="Onsale2">
+            <h3>Studded Jeans</h3>
+            <p>Trousers in stiff cotton denim with 5 pockets,regular waist and zip and button fastening.</p>
+            <p><s>OMR 10</s></p>
+            <p class="price">OMR 8</p>
+        </div>
+
+        <div class="item">
+            <img src="Onsale6.jpg" alt="Onsale6">
+            <h3>Nylon Crossbody Bag</h3>
+            <p>Crossbody bag in nylon. Adjustable shoulder strap with a metal slider buckle,zipper at top,an outer compartment with zipper,and two open inner compartments.Lined.</p>
+            <p><s>OMR 4</s></p>
+            <p class="price">OMR 2.950</p>
+        </div>
+
+        <div class="item">
+            <img src="Onsale3.jpg" alt="Onsale3">
+            <h3>Bluelight Eyeglasses</h3>
+            <p>Eyeglasses with frames, sidepieces, and transpaent lenses in plastic.Lenses with special coating to filter out blue light from digital screens</p>
+            <p><s>OMR 8</s></p>
+            <p class="price">OMR 6</p>
+        </div>
+
+          <div class="item">
+            <img src="Onsale5.jpg" alt="Onsale5">
+            <h3>Relaxed Fit Belted Trousers</h3>
+            <p>Tailored trousers in a soft weave with pleats at the top, waistband with a concealed hook-and-eye fastener, a zip fly and button, and a detachable belt with a metal buckle.</p>
+            <p><s>OMR 9</s></p>
+            <p class="price">OMR 7</p>
+
+          </div>
+            
+         <div class="item">
+            <img src="Onsale8.jpg" alt="Onsale8">
+            <h3>Barrel Loose Jeans</h3>
+            <p>5-pocket jeans in rigid cotton denim with an extra rounded leg and a loose fit from the seat to the hem with a dropped crotch and extra room around the whole leg.</p>
+            <p><s>OMR 8</s></p>
+            <p class="price">OMR 6</p>
+         </div>
+
+          <div class="item">
+            <img src="Onsale9.jpg" alt="Onsale9">
+            <h3>2-Pack Ties</h3>
+            <p>Classic ties in woven fabric</p>
+            <p><s>OMR 3</s></p>
+            <p class="price">OMR 1.50</p>  
+          </div>
+
+           <div class="item">
+            <img src="Onsale10.jpg" alt="Onsale10">
+            <h3>Bow-Detail Hair Elastic</h3>
+            <p>Hair elastic with a shiny plastic bow to upgrade your ponytail.</p>
+            <p><s>OMR 2</s></p>
+            <p class="price">OMR 0.950</p> 
+            </div>
+
+           <div class="item">
+            <img src="Onsale12.jpg" alt="Onsale12">
+            <h3>Bead-Embellished Rib-Knit Dress</h3>
+            <p>Long,fitted dress in a sheer,rib knit viscose blend.The design features a wavy structure on the front and sleeves,embellished with shiny metal beads.</p>
+            <p><s>OMR 11</s></p>
+            <p class="price">OMR 9</p>
+           </div>
+
+            <div class="item">
+            <img src="Onsale7.jpg" alt="Onsale7">
+            <h3>Frill Trimmed Chiffon Dress</h3>
+            <p>Ankle-length dress in sheer chiffon featuring a frilled collar and a keyhole opening with a button at the back.V-shaped yoke with pleats at the front and a wide frill trim that continues over the shoulders and back.</p>
+            <p><s>OMR 9</s></p>
+            <p class="price">OMR 7</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+    </body>
+</html>

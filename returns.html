@@ -1,0 +1,225 @@
+<html>
+<head>
+    <title>Solace Apparel</title>
+    <style>
+        body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+
+        .logo img {
+            width: 150px; 
+        }
+
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* cleaner spacing */
+        }
+
+        .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+            .content {
+        padding: 40px 10%;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #033612;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+        color: #033612;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    p, li {
+        font-size: 16px;
+        color: #0c3803;
+        line-height: 1.6;
+        margin: 6px 0;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+
+        /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+
+            <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+
+            <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+<style>
+    body {
+        background-color: #dcdcce;
+        margin: 0;
+        font-family: times, sans-serif;
+    }
+
+    .content {
+        padding: 40px 10%;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #033612;
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+        color: #033612;
+        margin-top: 25px;
+        margin-bottom: 6px;
+    }
+
+    p, li {
+        font-size: 16px;
+        color: #0c3803;
+        margin: 5px 0;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+</style>
+
+    <div class="content">
+        <h1>Returns, Exchanges & Refunds</h1>
+
+        <p>
+            This page gives you all the details about Solace Apparel's policy and process for returns, exchanges, and refunds.
+        </p>
+
+        <h2>Policy Overview</h2>
+        <p>
+            Items can be returned or exchanged within <strong>14 days</strong> of purchase with the original receipt.
+        </p>
+
+        <h2>Process</h2>
+        <ul>
+            <li>Bring the item to any Solace Apparel store.</li>
+            <li>Ensure the item is unworn, unwashed, and with original tags.</li>
+            <li>Show your receipt to our staff for processing.</li>
+        </ul>
+
+        <h2>Refunds</h2>
+        <p>
+            Refunds will be issued to the original payment method. Exchanges depend on stock availability.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+</body>
+</html>

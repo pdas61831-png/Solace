@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title>About</title>
+    <style>
+        body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+
+        .logo img {
+            width: 150px; 
+        }
+
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* cleaner spacing */
+        }
+
+        .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* CONTENT */
+        .content {
+        padding: 30px;
+        max-width: 700px;
+        margin: 0 auto;
+        color: #0b3003;
+        font-size: 18px;
+        line-height: 1.6;
+        }
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .content a {
+    color: #1a2718; /* or whatever colour you want */
+    font-weight: bold;
+    text-decoration: underline; /* optional */
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+
+            <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+
+            <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+<div class="content">
+    <h1>About Us</h1>
+    <p>
+        Solace Apparel is a modern luxury brand focused on clean designs, timeless silhouettes,
+        and effortless comfort. We create pieces that feel good, last long, and fit seamlessly
+        into your everyday life.
+    </p>
+    <p>
+        Explore our <a href="storelocator.html">store locations</a> and <a href="customerservice.html">customer service</a> pages to learn more about what we offer.
+    </p>
+</div>
+</div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+
+</body>
+</html>

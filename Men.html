@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>Men </title>
+        <style>
+             body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+        .logo img {
+            width: 150px; /* logo size */
+        }
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #0b3003;
+            font-weight: bold;
+        }
+
+
+
+          /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        </style>
+    </head>
+    <body>
+         <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="Home.html">Home</a>
+           
+             <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+            
+             <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+    
+    <h1><center><font name="times" color="#0b3003"><u>Men</u></font></center></h1>
+
+    <div class="products">
+
+        <div class="item">
+            <img src="Menswear1.jpg" alt="Menswear1">
+            <h3>Regular Fit Rib-Knit Jumper</h3>
+            <p>Jumper in a fine cotton rib knit featuring a round neckline and a straight hem.</p>
+            <p class="price">OMR 7</p>
+        </div>
+
+        <div class="item">
+            <img src="Menswear2.jpg" alt="Menswear2">
+            <h3>Regular Fit Polo Shirt</h3>
+            <p>Polo shirt in a soft merino wool knit, styled with a collar, button placket and long sleeves.</p>
+            <p class="price">OMR 9</p>
+        </div>
+
+        <div class="item">
+            <img src="Menswear3.jpg" alt="Menswear3">
+            <h3>Slim Fit Single Breasted Jacket</h3>
+            <p>Single breasted jacket in a soft weave containing some wol featuring narrow ntch lapels with a decorative buttonhole,and two two buttons at the front.</p>
+            <p class="price">OMR 10</p>
+        </div>
+
+        <div class="item">
+            <img src="Menswear4.jpeg" alt="Menswear4">
+            <h3>Regular Fit Single-Breasted Coat</h3>
+            <p>Single-Breasted coat in felted fabric containing some wool featuring notch lapels, buttons down the front and diagonal welt side pockets.</p>
+            <p class="price">OMR 8</p>
+        </div>
+
+          <div class="item">
+            <img src="Menswear5.jpg" alt="Menswear5">
+            <h3>Relaxed Fit Linen Blend Trousers</h3>
+            <p>Trousers in an airy weave made from a cotton and linen blend with a zip fly featuring a concealed hook-and-bar fastener and a button.</p>
+            <p class="price">OMR 6</p>
+
+          </div>
+            
+         <div class="item">
+            <img src="Menswear6.jpg" alt="Menswear6">
+            <h3>100% Wool Cable-Knit Jumper</h3>
+            <p>Regular fit jumper from open wool. Featuring a round neck, long sleeves and ribbed trims.</p>
+            <p class="price">OMR 8</p>
+         </div>
+
+          <div class="item">
+            <img src="Menswear7.jpg" alt="Menswear7">
+            <h3>100% Cashmere Turtleneck Jumper</h3>
+            <p>Regular fit jumper knitted from cashmere yarn. Features a turtleneck and long sleeves.  Ribbed trims.</p>
+            <p class="price">OMR 10</p>  
+          </div>
+
+           <div class="item">
+            <img src="Menswear8.jpg" alt="Menswear8">
+            <h3>Slim Fit Jacket</h3>
+            <p>Single-breasted jacket in a soft weave featuring narrow notch lapels with a decorative buttonhole, and two buttons at the front.</p>
+            <p class="price">OMR 12</p> 
+            </div>
+
+           <div class="item">
+            <img src="Menswear9.jpg" alt="Menswear9">
+            <h3>Relaxed Fit Linen Blend Trousers</h3>
+            <p>Trousers in an airy weave made from a cotton and linen blend with a zip fly featuring a concealed hook and bar fastener and a button</p>
+            <p class="price">OMR 9</p>
+           </div>
+
+            <div class="item">
+            <img src="Menswear10.jpg" alt="Menswear10">
+            <h3>Wool Blend Blazer Outfit</h3>
+            <p>Classic wool-blend blazer paired with a checkered shirt and tailored trousers.</p>
+            <p class="price">OMR 12</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+    </body>
+</html>

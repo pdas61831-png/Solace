@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>Women </title>
+        <style>
+             body {
+            background-color: #dcdcce;
+            margin: 0;
+            font-family: times, sans-serif;
+        }
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0b3003;
+            padding: 4px 10px;
+        }
+        .logo img {
+            width: 150px; /* logo size */
+        }
+        .navigation {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+       
+         .navigation a,
+        .dropdown > a {
+            color: #e3ddc1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e3ddc1;
+            min-width: 160px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+            z-index: 20;
+            
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* keeps dropdown centered */
+        }
+
+
+        .dropdown-content a {
+            color: #0b3003;
+            padding: 10px 15px;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #0b3003;
+            font-weight: bold;
+        }
+
+
+
+          /* FOOTER */
+        .footer {
+            background-color: #0b3003;
+            color: #e3ddc1;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #e3ddc1;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        </style>
+    </head>
+    <body>
+         <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="solacelogo.png" alt="Solace Logo">
+        </div>
+        <div class="navigation">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+            
+             <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+
+            <a href="new.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+           
+            <!-- About Dropdown -->
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="storelocator.html">Store Locator & Hours</a>
+                    <a href="customerservice.html">Customer Services</a>
+                </div>
+            </div>
+
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+    
+    <h1><center><font name="times" color="#0b3003"><u>Others</u></font></center></h1>
+
+    <div class="products">
+
+        <div class="item">
+            <img src="Accessories1.jpg" alt="Accessories1">
+            <h3>Textured Earrings</h3>
+            <p>Earrings in textured metal with an ovl top piece and a disc-shaped pendant below.</p>
+            <p class="price">OMR 2</p>
+        </div>
+
+        <div class="item">
+            <img src="Accessories2.jpg" alt="Accessories2">
+            <h3>CrossBody Bag</h3>
+            <p>Rectangular crossbody bag in coated fabric with an adjustable shoulder strap and a zip with a knotted pull tab at the top.lined.</p>
+            <p class="price">OMR 3</p>
+        </div>
+
+        <div class="item">
+            <img src="Accessories3.jpg" alt="Accessories3">
+            <h3>Sunglasses</h3>
+            <p>Sunglasses with plastic frames and sidepieces. Tinted, UV-protective plastic lenses.</p>
+            <p class="price">OMR 2</p>
+        </div>
+
+        <div class="item">
+            <img src="Accessories4.jpg" alt="Accessories4">
+            <h3>Heart-Pendant Chain Necklace</h3>
+            <p>Metal chain necklace decorated with a large, heart-shaped pendant. Adjustable length with a trigger clasp.</p>
+            <p class="price">OMR 4</p>
+        </div>
+
+          <div class="item">
+            <img src="Accessories5.jpg" alt="Accessories5">
+            <h3>Layered Chain Necklace</h3>
+            <p>Chain necklace fashioned from multiple strands in different designs and lengths to create a layered effect. Detailed with rings and flower-shaped pendants.</p>
+            <p class="price">OMR 5</p>
+
+          </div>
+            
+         <div class="item">
+            <img src="Accessories11.jpg" alt="Accessories11">
+            <h3>2-Pack Necklaces</h3>
+            <p>Necklaces in metal chain with different designs,including one chain with two pendants.Trigger clasp.</p>
+            <p class="price">OMR 0.950</p>
+         </div>
+
+          <div class="item">
+            <img src="Accessories7.jpg" alt="Accessories7">
+            <h3>2-Pack Necklaces</h3>
+            <p>Necklaces in different designs. One metal chain with a pendnat and one rhinestone chain. Both with a trigger clasp.</p>
+            <p class="price">OMR 1</p>  
+          </div>
+
+           <div class="item">
+            <img src="Accessories8.jpg" alt="Accessories8">
+            <h3>Leather Belt</h3>
+            <p>Leather belt with a metal buckle. Width 11/4 in.</p>
+            <p class="price">OMR 2</p> 
+            </div>
+
+           <div class="item">
+            <img src="Accessories9.jpg" alt="Accessories9">
+            <h3>Pile-Lined Slippers</h3>
+            <p>Slippers with a seam detail at the top and soft pile lining.Fluted soles.</p>
+            <p class="price">OMR 4</p>
+           </div>
+
+            <div class="item">
+            <img src="Accessories10.jpg" alt="Accessories10">
+            <h3>2-Piece Scarf and Beanie Set</h3>
+            <p>Set with a woven scarf and a rib-knit beanie.Scarf with fringe at short sides.</p>
+            <p class="price">OMR 3</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="tos.html">Terms & Conditions</a> |
+            <a href="customerservice.html">Contact</a>
+        </p>
+    </div>
+    </body>
+</html>
